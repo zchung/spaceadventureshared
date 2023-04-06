@@ -1,5 +1,4 @@
 ﻿using SpaceAdventure.Shared.Models.Enums;
-using System.Collections.Generic;
 
 namespace SpaceAdventure.Shared.Models.Interfaces
 {
@@ -9,7 +8,7 @@ namespace SpaceAdventure.Shared.Models.Interfaces
         List<string> Messages { get; set; }
     }
 
-    public interface IResult<T> : IResult where T : class
+    public interface IResult<T> : IResult
     {
         T Data { get; set; }
     }
